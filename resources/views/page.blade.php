@@ -18,4 +18,8 @@
 <p>
     <a href="{{ route('working') }}">Принять в работу</a>
 </p>
+<hr>
+<p>
+    <a href="{{ route('showQueue') }}">Посмотреть очередь</a>
+</p>
 
