@@ -16,7 +16,6 @@ class TaskTableSeeder extends Seeder
         foreach ($names as $name) {
             DB::table('tasks')->insert([
                 'name' => $name,
-                'counter' => 0
             ]);
         }
 
