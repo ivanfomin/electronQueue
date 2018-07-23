@@ -21,11 +21,7 @@ class TaskController extends Controller
     {
         DB::table('tasks')->where('id', $id)->increment('counter', 1);
 
-        $log = new LogController();
-
-        $log->logging($id);
-
-        return redirect('/');
+        return redirect()->action('LogController@logging', ['id' => $id]);
     }
 
 }
