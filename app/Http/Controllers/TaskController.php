@@ -23,7 +23,7 @@ class TaskController extends Controller
 
         //return redirect()->action('LogController@logging', ['id' => $id]);
 
-        return redirect()->route('logging', ['id' => $id]);
+        return redirect()->route('logging', $id);
     }
 
 }
